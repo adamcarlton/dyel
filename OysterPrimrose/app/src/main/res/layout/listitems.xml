@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<linearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/activity_listitems"
+    android:layout_width="fill_parent" android:layout_height="fill_parent">
+<textview android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/txt1">
+</textview>
+    <textview android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/txt2">
+    </textview>
+</linearLayout>

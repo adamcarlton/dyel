@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+     >
+    <!-- A CardView that contains a TextView -->
+<android.support.v7.widget.CardView
+xmlns:card_view="http://schemas.android.com/apk/res-auto"
+android:id="@+id/card_view"
+android:layout_gravity="center"
+android:layout_width="match_parent"
+card_view:cardCornerRadius="2dp"
+card_view:contentPadding="10dp"
+android:layout_margin="5dp"
+android:layout_height="wrap_content">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<TextView
+    android:id="@+id/text_title"
+    android:text="@string/titleText"
+    android:layout_alignParentTop="true"
+    android:layout_alignLeft="@+id/imageView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="30sp"
+    android:textStyle="normal|bold"
+    android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/button_alternate"
+        android:text="@string/alternate"
+        android:layout_alignRight="@+id/text_title"
+        android:onClick="handleAlternateExercise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_width="100sp"
+        android:id="@+id/imageView"
+        android:layout_height="100sp"
+        android:layout_alignParentLeft="true"
+        />
+
+    <TextView
+        android:id="@+id/text_equipment_type"
+        android:text="@string/equip_type"
+        android:layout_alignBottom="@id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/descriptionTextView"
+        android:layout_below="@id/imageView"
+        android:text="@string/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/text_comment"
+        android:layout_width="match_parent"
+        android:text="@string/one_thing_nanother_thing"
+        android:layout_below="@+id/descriptionTextView"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
+</android.support.v7.widget.CardView>
+
+    </LinearLayout>
