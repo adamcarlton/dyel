@@ -28,7 +28,6 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     private static final String DESCRIPTION = "description";
     private static final String COMMENTS = "comments";
     private static final String EQUIPMENT = "equipment";
-    //private static final String MUSCLEGROUP = "muscle group";
 
     public DatabaseHandler(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -54,11 +53,9 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     }
 
     public void addExerciseObject(ExerciseObject exercise){
-//        Toast.makeText(, "fuck", Toast.LENGTH_SHORT).show();
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
         values.put(EXERCISE, exercise.get_exercise());
-//        values.put(IMAGE, exercise.get_image());
         values.put(DESCRIPTION, exercise.get_description());
         values.put(COMMENTS, exercise.get_comments());
         values.put(EQUIPMENT, exercise.get_equipment());

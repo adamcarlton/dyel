@@ -87,13 +87,6 @@ public class addExerciseView extends AppCompatActivity {
             JSONObject obj = json.getJSONObject(i).getJSONObject("data");
             String name = obj.getString("name");
 
-//            String description = obj.getString("description");
-//            String comments = obj.getString("comments");
-//            String comments = "[COMMENTS]";
-//            String equipment = obj.getString();
-//            int equip = obj.getInt("equipment");
-//            String equipment = getNewJsonRequest("equipment",equip);
-//            String equipment = "equipment";
             ExerciseObject temp = new ExerciseObject(name,"","","","");
             results.add(temp);
         }
